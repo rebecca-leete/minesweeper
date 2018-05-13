@@ -1,7 +1,69 @@
 document.addEventListener('DOMContentLoaded', startGame)
 
 // Define your `board` object here!
-// var board = 
+var board = {
+}
+
+board.cells = [0, 1, 2, 3, 4, 5, 6, 7, 8] 
+board.cells[0] = {
+  row: 0,
+  col: 0,
+  isMine: true,
+  hidden: true
+}
+board.cells[1] = {
+  row: 0,
+  col: 1,
+  isMine: true,
+  hidden: true
+}
+board.cells[2] = {
+  row: 0,
+  col: 2,
+  isMine: false,
+  hidden: true
+}
+board.cells[3] = {
+  row: 1 ,
+  col: 0,
+  isMine: false,
+  hidden: true
+}
+
+board.cells[4] = {
+  row: 1,
+  col: 1,
+  isMine: false,
+  hidden: true
+}
+
+board.cells[5] = {
+  row: 1,
+  col: 2,
+  isMine: false,
+  hidden: true
+}
+
+board.cells[6] = {
+  row: 2,
+  col: 0,
+  isMine: false,
+  hidden: true
+}
+
+board.cells[7] = {
+  row: 2,
+  col: 1,
+  isMine: true,
+  hidden: true
+}
+
+board.cells[8] = {
+  row: 2,
+  col: 2,
+  isMine: false,
+  hidden: true
+}
 
 function startGame () {
   // Don't remove this function call: it makes the game work!
